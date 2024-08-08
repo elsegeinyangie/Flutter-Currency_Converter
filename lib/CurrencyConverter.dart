@@ -1,6 +1,4 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 
 class CurrencyConverter extends StatefulWidget {
   const CurrencyConverter({super.key});
@@ -17,7 +15,7 @@ class _CurrencyConverterStates extends State<CurrencyConverter> {
     double? value = double.tryParse(textEditingController.text.trim());
 
     if (value != null) {
-        result = value * 0.02;
+      result = value * 0.02;
       setState(() {});
     }
   }
@@ -25,8 +23,7 @@ class _CurrencyConverterStates extends State<CurrencyConverter> {
   void resetButton() {
     result = 0.0;
     textEditingController.clear();
-    setState(() {
-    });
+    setState(() {});
   }
 
   ButtonStyle buttonStyle() {
@@ -72,7 +69,7 @@ class _CurrencyConverterStates extends State<CurrencyConverter> {
               Padding(
                 padding: const EdgeInsets.all(10.0),
                 child: Text(
-                  'USD $result',
+                  '\$ $result',
                   style: const TextStyle(
                     color: Colors.white,
                     fontWeight: FontWeight.bold,
