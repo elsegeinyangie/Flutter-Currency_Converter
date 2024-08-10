@@ -69,7 +69,7 @@ class _CurrencyConverterStates extends State<CurrencyConverter> {
               Padding(
                 padding: const EdgeInsets.all(10.0),
                 child: Text(
-                  '\$ $result',
+                  '\ $result',
                   style: const TextStyle(
                     color: Colors.white,
                     fontWeight: FontWeight.bold,
